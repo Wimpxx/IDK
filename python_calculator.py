@@ -14,9 +14,11 @@ while True:
         result = num1 * num2
     elif operator == "/":
         result = num1 / num2
+    else:
+        print("Choose from the avalaible operators!")
+
+    print(f"Your result is {result}")
+
+    input()
 
     os.system('cls' if os.name == 'nt' else 'clear')
-else:
-    print("Choose from the avalaible operators!")
-
-print(f"Your result is {result}")
