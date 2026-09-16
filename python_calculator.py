@@ -1,16 +1,21 @@
-operator = input("What operator do you want to use [+|-|*|/]: ")
+import os
 
-num1 = int(input("What is the first number you want to use: "))
-num2 = int(input("What is the second number: "))
+while True:
+    operator = input("What operator do you want to use [+|-|*|/]: ")
 
-if operator == "+":
-    result = num1 + num2
-elif operator == "-":
-    result = num1 - num2
-elif operator == "*":
-    result = num1 * num2
-elif operator == "/":
-    result = num1 / num2
+    num1 = int(input("What is the first number you want to use: "))
+    num2 = int(input("What is the second number: "))
+
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        result = num1 / num2
+
+    os.system('cls' if os.name == 'nt' else 'clear')
 else:
     print("Choose from the avalaible operators!")
 
